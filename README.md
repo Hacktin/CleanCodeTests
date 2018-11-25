@@ -1,4 +1,4 @@
-# Engin Demiroğ hocamızın Youtube canlı yayınına binaen aşağıdaki senaryoya göre hazırlanmış senaryo
+# Engin Demiroğ hocamızın Youtube canlı yayınına binaen aşağıdaki senaryoya göre hazırlanmış çalışma
 
 Gereksinimler
 * Kullanıcı Bir ürünü satın almak istiyor.

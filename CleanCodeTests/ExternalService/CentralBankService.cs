@@ -9,7 +9,16 @@ namespace CleanCodeTests.ExternalService
     {
         public decimal ConvertCurrency(CurrencyRate currencyRate)
         {
-            return currencyRate.Price / (decimal)5.30;
+            switch (currencyRate.Currency)
+            {
+                case 1:
+                    return currencyRate.Price / (decimal)5.30;
+                case 2:
+                    return currencyRate.Price / (decimal)6.0;
+                default:
+                    return currencyRate.Price;
+            }
+            
         }
     }
 }

@@ -20,9 +20,10 @@ namespace CleanCodeTests.BusinessLayer
             if (customer.IsOfficer)
                 price = product.Price * (decimal)0.80;
 
-            price = _bankService.ConvertRate(new CurrencyRate { Currency = 1, Price = price });
+            price = _bankService.ConvertRate(new CurrencyRate { Currency = product.CurrencyType, Price = price });
 
-            Console.WriteLine(price);
+            Console.WriteLine(customer.Name + " ürün satıldı. "+ price +" "
+                +Enum.GetName(typeof(CurrencyType), product.CurrencyType) + " alındı");
         }
     }
 }
